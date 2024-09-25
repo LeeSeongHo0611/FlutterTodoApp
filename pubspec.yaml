@@ -1,0 +1,35 @@
+name: todo_list
+description: "플러터 TodoList"
+publish_to: 'none'  # 이 줄은 패키지가 pub.dev에 실수로 게시되지 않도록 방지함. 게시하려면 이 줄을 제거하세요.
+version: 1.0.0+1  # 애플리케이션의 버전과 빌드 번호를 정의함.
+
+environment:
+  sdk: ^3.5.2  # 프로젝트에서 사용할 Dart SDK 버전을 지정.
+
+dependencies:
+  flutter:
+    sdk: flutter  # 플러터 SDK를 의존성으로 추가.
+
+  # Firebase Core를 사용하여 앱에서 Firebase를 초기화하기 위한 패키지.
+  firebase_core: ^2.32.0
+
+  # Firestore를 사용하여 데이터를 저장하고 동기화하기 위한 패키지.
+  cloud_firestore: ^4.17.5
+
+  # 선택사항: Firebase Authentication(인증)을 사용할 경우 추가.
+  firebase_auth: ^4.4.1
+
+  # iOS 스타일의 아이콘을 사용하기 위한 Cupertino 아이콘 패키지.
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter  # 플러터에서 테스트를 작성하기 위한 패키지.
+  mockito: ^5.4.4
+  build_runner: ^2.4.0  # 필요시 코드 생성용
+
+  # flutter_lints 패키지는 코드 품질을 높이기 위해 권장되는 린트(lint) 규칙을 포함함.
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true  # Material Design 아이콘을 사용 가능하게 설정.
