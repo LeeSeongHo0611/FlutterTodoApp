@@ -26,7 +26,7 @@ class _TodoViewState extends State<TodoView> {
           ElevatedButton(
             onPressed: () {
               // 완료된 할 일 화면으로 이동 후 목록 새로고침
-              Navigator.of(context).pushNamed('/clear').then((value) {
+              Navigator.of(context).pushNamed('/cleartodo').then((value) {
                 setState(() {
                   todoListStream = todoController.getTodos(); // 할 일 목록 새로고침
                 });
@@ -131,7 +131,7 @@ class _TodoViewState extends State<TodoView> {
         children: <Widget>[
           FloatingActionButton(
             onPressed: () async {
-              final todo = await Navigator.of(context).pushNamed('/add');
+              final todo = await Navigator.of(context).pushNamed('/addtodo');
               if (todo != null) {
                 todoController.addTodo(todo as Todo); // 비즈니스에서 추가
                 setState(() {
