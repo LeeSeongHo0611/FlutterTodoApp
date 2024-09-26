@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:todo_list/models/todo.dart'; // Todo 모델 클래스
 import 'package:todo_list/controllers/todo_controller.dart'; // Controller 가져오기
 
-class addTodoApp extends StatefulWidget {
+class AddTodoApp extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => _addTodoApp();
+  State<StatefulWidget> createState() => _AddTodoApp();
 }
 
-class _addTodoApp extends State<addTodoApp> {
+class _AddTodoApp extends State<AddTodoApp> {
   TextEditingController? titleController;
   TextEditingController? contentController;
   TodoController todoController = TodoController(); // TodoController 인스턴스 생성

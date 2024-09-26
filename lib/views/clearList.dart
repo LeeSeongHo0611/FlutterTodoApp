@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:todo_list/models/todo.dart'; // Todo 모델 클래스
 import 'package:todo_list/controllers/clearlist_controller.dart'; // 컨트롤러 가져오기
 
-class clearListApp extends StatefulWidget {
+class ClearListApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => _clearListApp();
 }
 
-class _clearListApp extends State<clearListApp> {
+class _clearListApp extends State<ClearListApp> {
   ClearListController clearListController = ClearListController(); // 컨트롤러 인스턴스 생성
   Future<List<Todo>>? clearList; // 완료된 할 일 목록을 저장하는 변수
 
