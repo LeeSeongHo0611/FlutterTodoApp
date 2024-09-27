@@ -23,7 +23,7 @@ class _AddTodoApp extends State<AddTodoApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Todo 추가'),
+        title: Text('할일 추가'),
       ),
       body: Container(
         child: Center(
